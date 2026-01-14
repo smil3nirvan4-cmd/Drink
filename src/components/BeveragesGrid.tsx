@@ -79,7 +79,7 @@ const CATEGORIES: CategoryConfig[] = [
     }
 ];
 
-const AUTO_SLIDE_INTERVAL = 5000;
+const AUTO_SLIDE_INTERVAL = 8000;
 
 const BeveragesGrid: React.FC = () => {
     const [activeIndex, setActiveIndex] = useState(0);

@@ -90,11 +90,11 @@ const SocialProof: React.FC = () => {
     const [showNotification, setShowNotification] = useState(false);
     const [viewingCount, setViewingCount] = useState(47);
 
-    // Auto-rotate testimonials
+    // Auto-rotate testimonials (8 seconds for comfortable reading)
     useEffect(() => {
         const interval = setInterval(() => {
             setActiveTestimonial(prev => (prev + 1) % TESTIMONIALS.length);
-        }, 5000);
+        }, 8000);
         return () => clearInterval(interval);
     }, []);
 

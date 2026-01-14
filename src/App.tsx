@@ -18,6 +18,11 @@ import BeforeAfter from './components/BeforeAfter'
 import GuaranteeSection from './components/GuaranteeSection'
 import FloatingWhatsApp from './components/FloatingWhatsApp'
 import ExitIntentPopup from './components/ExitIntentPopup'
+// Institutional Pages
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import TermsOfUse from './pages/TermsOfUse'
+import RefundPolicy from './pages/RefundPolicy'
+import Contact from './pages/Contact'
 
 // Landing Page Component
 function LandingPage() {
@@ -102,9 +107,11 @@ function App() {
           <Route path="/membros" element={<MembersArea />} />
           <Route path="/members" element={<MembersArea />} />
 
-          {/* Legal Pages (placeholders) */}
-          <Route path="/termos" element={<div className="min-h-screen bg-neutral-950 text-white p-8"><h1 className="text-2xl font-bold">Termos de Uso</h1><p className="mt-4 text-neutral-400">Conteúdo dos termos aqui...</p></div>} />
-          <Route path="/privacidade" element={<div className="min-h-screen bg-neutral-950 text-white p-8"><h1 className="text-2xl font-bold">Política de Privacidade</h1><p className="mt-4 text-neutral-400">Conteúdo da política aqui...</p></div>} />
+          {/* Institutional Pages */}
+          <Route path="/privacidade" element={<PrivacyPolicy />} />
+          <Route path="/termos" element={<TermsOfUse />} />
+          <Route path="/reembolso" element={<RefundPolicy />} />
+          <Route path="/contato" element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </AuthProvider>

@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
                                 { label: 'Início', href: '#hero' },
                                 { label: 'Benefícios', href: '#benefits' },
                                 { label: 'Preço', href: '#pricing' },
-                                { label: 'Contato', href: 'mailto:contato@lpdrink.com.br' },
+                                { label: 'Contato', href: '/contato' },
                             ].map((link) => (
                                 <li key={link.label}>
                                     <a
